@@ -1,0 +1,20 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="container-top">
+            <h1>Twitter風アプリケーション</h1>
+            <p><%= link_to '新規投稿', new_tweet_path %></p>
+        </div>
+        
+        <div class="container-bottom">
+            <h1>ツイート一覧</h1>
+                <ul>
+                <% @tweets.each do |tweet| %>
+                    <li><%= tweet.content %></li>
+                <% end %>
+                </ul>
+            次やること、index画面で投稿して@tweetsの情報を渡せないのでエラーが出る解決策、一つ一つのツイートにアンダーバー、gitに登録してブランチを分けて
+            この状態にいつでも戻れるようにする、herokuにアップした時に見た目なぜ変わっているのか、なぜ指定してないのにレシポンシブっぽくなってるのか(これはレスポンシブの動きなのか)
+        </div>   
+        
+    </div>
+</div>

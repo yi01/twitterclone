@@ -1,0 +1,82 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+    height: 50px;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+
+header p, a{
+    line-height: 50px;
+    color: gray;
+}
+
+.header-left{
+    float: left;
+}
+
+.header-left a {
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+
+.header-right{
+    float: right;
+}
+
+.header-right p {
+    margin-right: 50px;
+}
+
+.wrapper{
+    background-color: gray;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.container{
+    background-color: white;
+    width: 70%;
+    
+}
+
+.container-top{
+    height: 120px;
+    border-bottom: 1px solid gray;
+}
+
+.container-top h1{
+    text-align: center;
+    font-size: 24px;
+    font-family:  Arial;
+}
+
+.container-top p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.container-bottom{
+    height: 800px;
+}
+
+.container-bottom h1{
+    text-align: center;
+    font-size: 24px;
+    font-family:  Arial;
+}
+
+footer{
+    background-color: white;
+    border-top: 1px solid gray;
+    height: 30px;
+    font-size: 15px;
+}
+
+footer p{
+    text-align: center;
+    line-height: 30px;
+}
