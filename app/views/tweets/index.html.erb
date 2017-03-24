@@ -1,22 +1,18 @@
-<div class="wrapper">
-    <div class="container">
-        <div class="container-top">
-            <h1>Twitter風アプリケーション</h1>
+<%= notice %>
+      <h1>Twitter風アプリケーション</h1>
             <p><%= link_to '新規投稿', new_tweet_path %></p>
         </div>
         
         <div class="container-bottom">
             <h1>ツイート一覧</h1>
-                <ul>
+                <ul class="tweet">
                 <% @tweets.each do |tweet| %>
-                    <li><%= tweet.content %></li>
+                    <li>
+                        <p><%= tweet.content %></p>
+                        <time><%= time_ago_in_words tweet.created_at %></time><br>
+                        <span><%= link_to "編集する", edit_tweet_path(tweet.id) %></span>
+                        <span><%= link_to "削除する", tweet_path(tweet.id), method: :delete, data: { confirm: '本当に削除していいですか？'} %></span>
+                    </li>
                 <% end %>
                 </ul>
-           index画面で投稿して@tweetsの情報を渡せないのでエラーが出る解決策
-           一つ一つのツイートにアンダーバー
-           herokuにアップした時に見た目なぜ変わっているのか、
-           aなぜ指定してないのにレシポンシブっぽくなってるのか(これはレスポンシブの動きなのか)
-        </div>   
-        
-    </div>
-</div>
+        <div>

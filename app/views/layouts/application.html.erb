@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header class="clearfix">
@@ -17,7 +18,15 @@
     </div>
   </header>
   
-    <%= yield %>
+  <div class="wrapper">
+    <div class="container">
+        <div class="container-top">
+  
+          <%= yield %>
+          
+        </div>   
+    </div>
+</div>
   
   <footer>
     <p>Twiiter Inc.</p>
