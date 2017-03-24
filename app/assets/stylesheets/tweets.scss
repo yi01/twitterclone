@@ -5,6 +5,8 @@ header {
     height: 50px;
     background-color: white;
     border-bottom: 1px solid gray;
+    position: fixed;
+    width: 100%;
 }
 
 header p, a{
@@ -79,4 +81,10 @@ footer{
 footer p{
     text-align: center;
     line-height: 30px;
+}
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
 }
